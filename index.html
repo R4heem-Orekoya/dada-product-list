@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/images/favicon-32x32.png"
+  />
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="product-section">
+      <h1>Desserts</h1>
+      <div class="product-grid js-product-grid"></div>
+    </section>
+    
+    <div class="cart-container">
+      <h2 class="cart-header">Your Cart (0)</h2>
+      <div class="cart-content"></div>
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <h4>Order Total</h4>
+          <p class="cart-total"></p>
+        </div>
+        <div class="carbon-nonsense">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="">
+          <p>This is a <b>carbon-neutral</b> delivery</p>
+        </div>
+        
+        <button class="confirm-order-btn action-btn">Confirm Order</button>
+      </div>
+    </div>
+    
+    <div class="confirm-order-popup">
+      <div class="confirm-order-container">
+        <img src="assets/images/icon-order-confirmed.svg" alt="">
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food</p>
+        
+        <div class="order-list-section">
+          <ul class="order-list">
+          </ul>
+          <div class="cart-summary">
+            <h4>Order Total</h4>
+            <p class="cart-total"></p>
+          </div>
+        </div>
+        <button class="start-new-order-btn action-btn">Start new order</button>
+      </div>
+    </div>
+  </main>
+  
+  <script src="app.js" type="module"></script>
+</body>
+</html>
