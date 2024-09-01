@@ -102,13 +102,14 @@ function renderCart() {
 
     removeItemBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
-        removerItemFromCart(btn.dataset.id)
+        removeItemFromCart(btn.dataset.id)
         document.querySelector(`.quantity-control-id-${btn.dataset.id}`).classList.remove("display")
+        displayNumberOfItemsInCart()
         renderCart()
       })
     }) 
     
-    function removerItemFromCart(id) {
+    function removeItemFromCart(id) {
       cart = cart.filter(item => item.id !== id)
     }
   }
